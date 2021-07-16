@@ -1,9 +1,12 @@
 using UnityEditor;
+using UnityEngine;
 
 namespace com.rpdev.usnfp {
+
     [InitializeOnLoad]
     public class FileModificationPostProcessor : AssetPostprocessor {
-
+        
+        [InitializeOnLoadMethod]
         public static void InitMods() {
             Debug.Log("---Processor pre inited---");
         }

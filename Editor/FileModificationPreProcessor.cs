@@ -1,4 +1,4 @@
-namespace com.rpdev.usnfp {
+namespace com.rpdev.usnfp.Editor {
     
     public class FileModificationPreProcessor : UnityEditor.AssetModificationProcessor {
         public static void OnWillCreateAsset(string path) {

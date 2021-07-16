@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace com.rpdev.usnfp {
+namespace com.rpdev.usnfp.Editor {
     public class FilePathProcessor {
         public class ComplexFilePaths {
             public string origin_path;

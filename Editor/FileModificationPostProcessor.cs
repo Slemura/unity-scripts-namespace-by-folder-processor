@@ -1,7 +1,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace com.rpdev.usnfp {
+namespace com.rpdev.usnfp.Editor {
 
     [InitializeOnLoad]
     public class FileModificationPostProcessor : AssetPostprocessor {

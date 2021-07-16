@@ -6,7 +6,7 @@ using System.IO;
 using System.Linq;
 using UniTools;
 
-namespace com.rpdev.usnfp {
+namespace com.rpdev.usnfp.Editor {
     
     public class NamespaceCorrector {
         

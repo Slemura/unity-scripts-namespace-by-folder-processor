@@ -6,17 +6,10 @@ namespace com.rpdev.usnfp.Editor {
     [InitializeOnLoad]
     public class FileModificationPostProcessor : AssetPostprocessor {
         
-        [InitializeOnLoadMethod]
-        public static void InitMods() {
-            Debug.Log("---Processor pre inited---");
-        }
-        
         public static void OnPostprocessAllAssets(string[] imported_assets, string[] deleted_assets, string[] moved_assets, string[] moved_from_asset_paths) {
 
 
             for (int i = 0; i < moved_from_asset_paths.Length; i++) {
-                Debug.Log("Create Namespace");
-                Debug.Log("Moved Asset from " + movedFromAssetPaths[i] + " to " + movedAssets[i]);
                 
                 if (!moved_assets[i].Contains("Assets/Scripts/")) continue;
 

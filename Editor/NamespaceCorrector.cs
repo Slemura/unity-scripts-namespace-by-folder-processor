@@ -17,7 +17,9 @@ namespace com.rpdev.usnfp {
                 int    start_of_namespace = file.IndexOf("namespace", StringComparison.Ordinal);
                 int    end_of_namespace   = file.IndexOf("{", StringComparison.Ordinal);
                 string old_namespace      = file.Substring(start_of_namespace, end_of_namespace - start_of_namespace);
-
+                
+                Debug.Log("Old Namespace [" + old_namespace + "]");
+                
                 file = file.Replace(old_namespace,
                                     "namespace " + GetNamespaceForPath(paths.origin_path).ToLower() + " ");
             } else {

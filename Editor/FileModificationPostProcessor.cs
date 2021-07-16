@@ -3,10 +3,17 @@ using UnityEditor;
 namespace com.rpdev.usnfp {
     [InitializeOnLoad]
     public class FileModificationPostProcessor : AssetPostprocessor {
+
+        public static void InitMods() {
+            Debug.Log("---Processor pre inited---");
+        }
+        
         public static void OnPostprocessAllAssets(string[] imported_assets, string[] deleted_assets, string[] moved_assets, string[] moved_from_asset_paths) {
 
 
             for (int i = 0; i < moved_from_asset_paths.Length; i++) {
+                Debug.Log("Create Namespace");
+                Debug.Log("Moved Asset from " + movedFromAssetPaths[i] + " to " + movedAssets[i]);
                 
                 if (!moved_assets[i].Contains("Assets/Scripts/")) continue;
 

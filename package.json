@@ -1,0 +1,25 @@
+{
+  "name": "com.rpdev.usnfp",
+  "displayName": "Unity Scripts Namespace Postprocessor",
+  "version": "0.0.1",
+  "unity": "2019.4",
+  "unityRelease": "10f1",
+  "description": "Namespace in scripts by folder name",
+  "dependencies": {
+  },
+  "keywords": [
+    "namespace",
+    "scripts"
+  ],
+  "type": "module",
+  "author": {
+    "name": "rpdev",
+    "email": "titan.growl@gmail.com",
+    "url": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Slemura/unity-scripts-namespace-by-folder-processor",
+    "revision": ""
+  }
+}
